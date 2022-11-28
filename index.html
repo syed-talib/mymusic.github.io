@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/67eef92684.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .box{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: url("main.jpg") no-repeat center;
+    background-size: cover;
+  } 
+  .box .box2{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("bass.gif") no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .box .musicbox{
+    height:250px;
+    width:250px;
+    background: url("bg.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px);
+    border-radius: 50%;
+  }
+  i{
+    color: white;
+    opacity: 0.5;
+    background: black;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .box .musicbox .playpause{
+    height: 30px;
+    width:30px;
+    background: black;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    a{
+        text-decoration: none;
+        position: absolute;
+        top:300px;
+        background:black;
+        padding: 10px;
+        border-radius: 20px;
+        width:100px;
+        text-align: center;
+      
+    }
+    a:hover{
+        opacity: 1;
+        color: white;
+    }
+   
+   
+</style>
+<body>
+   
+     <div class="box">
+    <div class="box2">
+        <div class="musicbox">
+            <div class="playpause">
+
+                <audio src="music.mp3" id="music"></audio>
+                <i class="fa fa-play" aria-hidden="true" id="play"></i>
+                <i class="fa fa-pause" aria-hidden="true" id="pause"></i>
+                <a href="music.mp3" class="href" download="plane jane x by talib"><i class="fa fa-download" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+     </div>  
+   <script src="index.js"></script>
+</body>
+</html>
